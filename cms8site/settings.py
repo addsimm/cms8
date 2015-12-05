@@ -168,7 +168,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'project.db',
+        'NAME': '/Users/adamsimon/Google Drive/project.db',
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
