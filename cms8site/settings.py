@@ -1,6 +1,4 @@
-import os
-gettext = lambda s: s
-DATA_DIR = os.path.dirname(os.path.dirname(__file__))
+
 """
 Django settings for cms8site project.
 
@@ -13,8 +11,9 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+gettext = lambda s: s
+DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -29,40 +28,26 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
-
-
-
-
 
 ROOT_URLCONF = 'cms8site.urls'
 
 WSGI_APPLICATION = 'cms8site.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
-
 LANGUAGE_CODE = 'en'
-
 TIME_ZONE = 'America/Los_Angeles'
-
 USE_I18N = False
-
 USE_L10N = False
-
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
-
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
@@ -71,6 +56,7 @@ STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'cms8site', 'static'),
 )
+
 SITE_ID = 1
 
 TEMPLATE_LOADERS = (
